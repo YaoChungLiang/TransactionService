@@ -37,8 +37,10 @@ Each user can spend points and there are other payers will pay for the points.
     3. Run `python3 transactionSender.py --show-balance` to show the final balance
     4. Run `python3 transactionSender.py --delete-all` to delete all the records in the database.
     5. Run `python3 transactionSender.py --insert-record --payer DEBO --points 300` to insert a record in the database.
-- Create your own lambda service
-    1. Create a lambda function follow the [instrunctions](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)
-    2. `cd TransactionService/src/backend`
-    3. Packaging the lambda function by `bash builder.bash entrypoint`
-    4. Upload the tarball `entrypoint.zip` to the lambda function you created.
+- Create your own lambda service and DynamoDB database
+    1. Create a DynamoDb Table call `Transaction` follow by the [instrunctions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+    2. Create a lambda function and give the lambda function permission to access the DynamoDB you created follow the [instrunctions](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)
+    3. `cd TransactionService/src/backend`
+    4. Packaging the lambda function by `bash builder.bash entrypoint`
+    5. Upload the tarball `entrypoint.zip` to the lambda function you created.
+    6. The service is up.
