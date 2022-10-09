@@ -28,7 +28,7 @@ Each user can spend points and there are other payers will pay for the points.
 - Run unit tests to check the functions all pass the the tests
     
     1. `cd TransactionService/src/client_cli`
-    2. `python3 transactionSender.py`
+    2. `python3 test_transactionSender.py`
     3. All the tests should pass
 - Use command line interface script to send requests to the AWS lambda service and modify the records in the database. 
 
