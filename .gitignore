@@ -1,0 +1,10 @@
+*.7z
+*.dmg
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.pyc
+*.swp
+._*
