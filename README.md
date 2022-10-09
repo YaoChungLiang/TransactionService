@@ -36,7 +36,7 @@ Each user can spend points and there are other payers will pay for the points.
     2. Run `python3 transactionSender.py --spend-points --points 5000` to spend 5000 points
     3. Run `python3 transactionSender.py --show-balance` to show the final balance
     4. Run `python3 transactionSender.py --delete-all` to delete all the records in the database.
-    5. Run `python transactionSender.py --insert-record --payer DEBO --points 300` to insert a record in the database.
+    5. Run `python3 transactionSender.py --insert-record --payer DEBO --points 300` to insert a record in the database.
 - Create your own lambda service
     1. Create a lambda function follow the [instrunctions](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)
     2. `cd TransactionService/src/backend`
